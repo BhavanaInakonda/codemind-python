@@ -1,4 +1,8 @@
 n=int(input())
-s=str(n)
-k=list(s)
-print(max(k))
+mx=0
+while n>0:
+    r=n%10
+    if r>mx:
+        mx=r
+    n=n//10
+print(mx)
